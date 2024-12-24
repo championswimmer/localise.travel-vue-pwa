@@ -18,3 +18,4 @@ app.use(router)
 app.use(createBootstrap())
 
 app.mount('#app')
+updateServiceWorker()
