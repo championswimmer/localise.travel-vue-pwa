@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import { BNavbar, BNavbarBrand, BNavbarNav, BNavItem } from 'bootstrap-vue-next'
-import { Globe } from 'lucide-vue-next'
+import LucideIcon from '@/components/LucideIcon.vue'
 </script>
 
 <template>
   <BNavbar toggleable="lg">
     <BNavbarBrand href="#" class="fw-bold">
-      <Globe class="me-2 mb-1" :size="24" />
+      <LucideIcon :name="'globe'" class="me-2 mb-1" :size="24" />
       localise.travel
     </BNavbarBrand>
     <BNavbarNav>

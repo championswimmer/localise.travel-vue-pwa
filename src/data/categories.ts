@@ -1,0 +1,286 @@
+import type { Icon } from './icons'
+
+interface Category {
+  name: string
+  icon: Icon
+  subcategories: Subcategory[]
+}
+
+interface Subcategory {
+  name: string
+  icon: Icon
+  words: string[]
+}
+
+export const WordCategories: Category[] = [
+  {
+    name: 'Travel',
+    icon: 'tickets-plane',
+    subcategories: [
+      {
+        name: 'Air Travel',
+        icon: 'plane',
+        words: [
+          'departure',
+          'arrival',
+          'boarding pass',
+          'passport control',
+          'baggage claim',
+          'terminal',
+          'gate',
+          'check-in',
+          'security check',
+          'customs',
+        ],
+      },
+      {
+        name: 'Road Travel',
+        icon: 'car',
+        words: [
+          'gas station',
+          'parking lot',
+          'highway',
+          'toll road',
+          'car rental',
+          'traffic light',
+          'directions',
+          'rest area',
+          'exit',
+          'roundabout',
+        ],
+      },
+      {
+        name: 'Rail Travel',
+        icon: 'rail-symbol',
+        words: [
+          'platform',
+          'ticket office',
+          'train station',
+          'timetable',
+          'track number',
+          'railway car',
+          'connection',
+          'seat reservation',
+          'conductor',
+          'delay',
+        ],
+      },
+    ],
+  },
+  {
+    name: 'Places',
+    icon: 'map-pin-house',
+    subcategories: [
+      {
+        name: 'Hotels',
+        icon: 'bed',
+        words: [
+          'reception',
+          'check-in',
+          'checkout',
+          'room service',
+          'housekeeping',
+          'wake-up call',
+          'minibar',
+          'luggage storage',
+          'complimentary breakfast',
+          'reservation',
+        ],
+      },
+      {
+        name: 'Work',
+        icon: 'briefcase',
+        words: [
+          'meeting room',
+          'office',
+          'conference call',
+          'presentation',
+          'printer',
+          'colleague',
+          'deadline',
+          'schedule',
+          'business card',
+          'appointment',
+        ],
+      },
+      {
+        name: 'Outdoors',
+        icon: 'trees',
+        words: [
+          'hiking trail',
+          'campsite',
+          'picnic area',
+          'scenic view',
+          'national park',
+          'beach',
+          'mountain',
+          'lake',
+          'forest',
+          'garden',
+        ],
+      },
+    ],
+  },
+  {
+    name: 'Food & Drink',
+    icon: 'utensils-crossed',
+    subcategories: [
+      {
+        name: 'Restaurants',
+        icon: 'utensils',
+        words: [
+          'reservation',
+          'menu',
+          'waiter',
+          'bill',
+          'tip',
+          'table for two',
+          'appetizer',
+          'main course',
+          'dessert',
+          'drinks',
+        ],
+      },
+      {
+        name: 'Pubs & Bars',
+        icon: 'beer',
+        words: [
+          'draft beer',
+          'wine list',
+          'cocktail',
+          'happy hour',
+          'bar stool',
+          'snacks',
+          'last call',
+          'spirits',
+          'bartender',
+          'tab',
+        ],
+      },
+      {
+        name: 'Cafes',
+        icon: 'coffee',
+        words: [
+          'espresso',
+          'latte',
+          'pastry',
+          'wifi password',
+          'takeaway',
+          'coffee to go',
+          'breakfast menu',
+          'barista',
+          'milk alternatives',
+          'opening hours',
+        ],
+      },
+    ],
+  },
+  {
+    name: 'Shopping',
+    icon: 'shopping-bag',
+    subcategories: [
+      {
+        name: 'Clothes',
+        icon: 'tshirt',
+        words: [
+          'fitting room',
+          'size',
+          'sale',
+          'discount',
+          'receipt',
+          'return policy',
+          'cashier',
+          'price tag',
+          'collection',
+          'payment',
+        ],
+      },
+      {
+        name: 'Electronics',
+        icon: 'mobile',
+        words: [
+          'charger',
+          'adapter',
+          'warranty',
+          'technical support',
+          'battery life',
+          'specifications',
+          'memory',
+          'display',
+          'accessories',
+          'repair',
+        ],
+      },
+      {
+        name: 'Books',
+        icon: 'book',
+        words: [
+          'bestseller',
+          'paperback',
+          'hardcover',
+          'genre',
+          'author',
+          'bookshelf',
+          'recommendation',
+          'new releases',
+          'bookstore',
+          'reading list',
+        ],
+      },
+    ],
+  },
+  {
+    name: 'Money',
+    icon: 'wallet',
+    subcategories: [
+      {
+        name: 'Banking',
+        icon: 'bank',
+        words: [
+          'account',
+          'balance',
+          'transfer',
+          'withdrawal',
+          'deposit',
+          'statement',
+          'exchange rate',
+          'branch',
+          'online banking',
+          'transaction',
+        ],
+      },
+      {
+        name: 'Cash',
+        icon: 'coins',
+        words: [
+          'change',
+          'bills',
+          'coins',
+          'currency',
+          'ATM',
+          'cash back',
+          'money exchange',
+          'safe',
+          'wallet',
+          'local currency',
+        ],
+      },
+      {
+        name: 'Cards',
+        icon: 'credit-card',
+        words: [
+          'credit card',
+          'debit card',
+          'PIN number',
+          'contactless',
+          'chip',
+          'swipe',
+          'card reader',
+          'expiry date',
+          'security code',
+          'card limit',
+        ],
+      },
+    ],
+  },
+]
