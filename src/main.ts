@@ -1,5 +1,3 @@
-import './assets/main.css'
-
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 import { createBootstrap } from 'bootstrap-vue-next'
@@ -10,6 +8,9 @@ import router from './router'
 // Add bootstrap CSS
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue-next/dist/bootstrap-vue-next.css'
+
+// Add our CSS
+import './assets/main.css'
 
 const app = createApp(App)
 
