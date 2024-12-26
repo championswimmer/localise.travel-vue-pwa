@@ -1,6 +1,4 @@
 export type Icon =
-  // main icon
-  | 'globe'
   // category: Travel; subcategory: Air, Road, Rail
   | 'tickets-plane'
   | 'plane'
@@ -18,11 +16,11 @@ export type Icon =
   | 'coffee'
   // category: Shopping; subcategory: Clothes, Electronics, Books
   | 'shopping-bag'
-  | 'tshirt'
-  | 'mobile'
+  | 'shirt'
+  | 'tablet-smartphone'
   | 'book'
   // category: Money; subcategory: Bank, Cash, Card
   | 'wallet'
-  | 'bank'
+  | 'landmark'
   | 'coins'
   | 'credit-card'

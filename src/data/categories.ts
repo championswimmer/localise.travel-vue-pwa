@@ -181,7 +181,7 @@ export const WordCategories: Category[] = [
     subcategories: [
       {
         name: 'Clothes',
-        icon: 'tshirt',
+        icon: 'shirt',
         words: [
           'fitting room',
           'size',
@@ -197,7 +197,7 @@ export const WordCategories: Category[] = [
       },
       {
         name: 'Electronics',
-        icon: 'mobile',
+        icon: 'tablet-smartphone',
         words: [
           'charger',
           'adapter',
@@ -235,7 +235,7 @@ export const WordCategories: Category[] = [
     subcategories: [
       {
         name: 'Banking',
-        icon: 'bank',
+        icon: 'landmark',
         words: [
           'account',
           'balance',
