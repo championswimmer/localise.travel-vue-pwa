@@ -1,12 +1,12 @@
 import type { Icon } from './icons'
 
-interface Category {
+export interface Category {
   name: string
   icon: Icon
   subcategories: Subcategory[]
 }
 
-interface Subcategory {
+export interface Subcategory {
   name: string
   icon: Icon
   words: string[]
@@ -126,7 +126,7 @@ export const WordCategories: Category[] = [
     icon: 'utensils-crossed',
     subcategories: [
       {
-        name: 'Restaurants',
+        name: 'Restaurant',
         icon: 'utensils',
         words: [
           'reservation',
@@ -142,7 +142,7 @@ export const WordCategories: Category[] = [
         ],
       },
       {
-        name: 'Pubs & Bars',
+        name: 'Pub & Bar',
         icon: 'beer',
         words: [
           'draft beer',
@@ -158,7 +158,7 @@ export const WordCategories: Category[] = [
         ],
       },
       {
-        name: 'Cafes',
+        name: 'Cafe',
         icon: 'coffee',
         words: [
           'espresso',

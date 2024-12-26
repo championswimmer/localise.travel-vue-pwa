@@ -28,6 +28,7 @@ const props = defineProps<{
   name: Icon
   size?: number
   color?: string
+  width?: number
 }>()
 
 const icon = computed(() => {
@@ -79,5 +80,10 @@ const icon = computed(() => {
 </script>
 
 <template>
-  <component :is="icon" :size="props.size || 24" :stroke="props.color || 'currentColor'" />
+  <component
+    :is="icon"
+    :size="props.size || 24"
+    :stroke="props.color || 'currentColor'"
+    :strokeWidth="props.width || 2"
+  />
 </template>
