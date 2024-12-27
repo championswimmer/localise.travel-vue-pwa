@@ -8,10 +8,13 @@ export interface TranslatedWords {
 } /** list of words in selected language */
 
 import { wordList as frenchWordList } from './fr'
-import { wordList as spanishWordList } from './esp'
+import { wordList as spanishWordList } from './es'
+import { wordList as russianWordList } from './ru'
+
 
 
 export const wordLists: { [lang: string]: TranslatedWords } = {
   fr: frenchWordList,
-  esp: spanishWordList
+  es: spanishWordList,
+  ru: russianWordList
 }
