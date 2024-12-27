@@ -13,6 +13,8 @@ import { wordList as russianWordList } from './ru'
 import { wordList as germanWordList } from './de'
 import { wordList as hindiWordList } from './hi'
 import { wordList as bengaliWordList } from './bn'
+import { wordList as chineseWordList } from './zh'
+
 
 
 
@@ -23,5 +25,6 @@ export const wordLists: { [lang: string]: TranslatedWords } = {
   ru: russianWordList,
   de: germanWordList,
   hi: hindiWordList,
-  bn: bengaliWordList
+  bn: bengaliWordList,
+  zh: chineseWordList
 }
