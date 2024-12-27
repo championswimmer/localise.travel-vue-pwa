@@ -13,11 +13,11 @@ const press = ref(false)
 </script>
 
 <template>
-  <div class="col">
+  <RouterLink :to="category.path" class="col text-decoration-none">
     <BCard
       class="border-2"
       @mouseover="hover = true"
-      @mouseleave="hover = false"
+      @mouseleave="hover = press = false"
       @mousedown="press = true"
       @mouseup="press = false"
       :class="{
@@ -47,7 +47,7 @@ const press = ref(false)
         </BListGroup>
       </BCardBody>
     </BCard>
-  </div>
+  </RouterLink>
 </template>
 
 <style scoped>

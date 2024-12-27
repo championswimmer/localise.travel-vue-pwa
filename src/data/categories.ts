@@ -2,6 +2,7 @@ import type { Icon } from './icons'
 
 export interface Category {
   name: string
+  path: string
   icon: Icon
   subcategories: Subcategory[]
 }
@@ -15,6 +16,7 @@ export interface Subcategory {
 export const WordCategories: Category[] = [
   {
     name: 'Travel',
+    path: 'travel',
     icon: 'tickets-plane',
     subcategories: [
       {
@@ -69,6 +71,7 @@ export const WordCategories: Category[] = [
   },
   {
     name: 'Places',
+    path: 'places',
     icon: 'map-pin-house',
     subcategories: [
       {
@@ -123,6 +126,7 @@ export const WordCategories: Category[] = [
   },
   {
     name: 'Food & Drink',
+    path: 'food-drink',
     icon: 'utensils-crossed',
     subcategories: [
       {
@@ -177,6 +181,7 @@ export const WordCategories: Category[] = [
   },
   {
     name: 'Shopping',
+    path: 'shopping',
     icon: 'shopping-bag',
     subcategories: [
       {
@@ -231,6 +236,7 @@ export const WordCategories: Category[] = [
   },
   {
     name: 'Money',
+    path: 'money',
     icon: 'wallet',
     subcategories: [
       {
