@@ -9,6 +9,7 @@ declare module 'vue' {
   export interface GlobalComponents {
     BListGroupItem: typeof import('bootstrap-vue-next/components/BListGroup')['BListGroupItem']
     CategoryCard: typeof import('./src/components/CategoryCard.vue')['default']
+    GithubIcon: typeof import('./src/components/icons/GithubIcon.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
     Icon: typeof import('./src/components/Icon.vue')['default']
     IconCommunity: typeof import('./src/components/icons/IconCommunity.vue')['default']
@@ -17,6 +18,7 @@ declare module 'vue' {
     IconSupport: typeof import('./src/components/icons/IconSupport.vue')['default']
     IconTooling: typeof import('./src/components/icons/IconTooling.vue')['default']
     LucideIcon: typeof import('./src/components/LucideIcon.vue')['default']
+    MainFooter: typeof import('./src/components/MainFooter.vue')['default']
     NavBar: typeof import('./src/components/NavBar.vue')['default']
     ReloadPrompt: typeof import('./src/components/ReloadPrompt.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']

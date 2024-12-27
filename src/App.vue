@@ -5,12 +5,15 @@ import NavBar from '@/components/NavBar.vue'
 </script>
 
 <template>
-  <NavBar />
+  <div class="d-flex flex-column min-vh-100">
+    <NavBar />
 
-  <div class="container">
-    <RouterView />
+    <main class="flex-shrink-0 mb-4">
+      <RouterView />
+    </main>
+    <ReloadPrompt />
+    <MainFooter />
   </div>
-  <ReloadPrompt />
 </template>
 
 <style scoped></style>
