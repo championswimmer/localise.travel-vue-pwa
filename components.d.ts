@@ -8,6 +8,7 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     BCard: typeof import('bootstrap-vue-next/components/BCard')['BCard']
+    BCardBody: typeof import('bootstrap-vue-next/components/BCard')['BCardBody']
     BListGroupItem: typeof import('bootstrap-vue-next/components/BListGroup')['BListGroupItem']
     CategoryCard: typeof import('./src/components/CategoryCard.vue')['default']
     GithubIcon: typeof import('./src/components/icons/GithubIcon.vue')['default']
@@ -27,5 +28,6 @@ declare module 'vue' {
     SubcategoryCard: typeof import('./src/components/SubcategoryCard.vue')['default']
     TheWelcome: typeof import('./src/components/TheWelcome.vue')['default']
     WelcomeItem: typeof import('./src/components/WelcomeItem.vue')['default']
+    WordCard: typeof import('./src/components/WordCard.vue')['default']
   }
 }

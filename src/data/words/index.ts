@@ -15,19 +15,35 @@ import { wordList as hindiWordList } from './hi'
 import { wordList as bengaliWordList } from './bn'
 import { wordList as chineseWordList } from './zh'
 import { wordList as japaneseWordList } from './ja'
+import type { LangCode } from '../languages'
 
+/*
+  TODO: lazy load word lists
+  maybe like this
+  switch (lang) {
+    case 'fr':
+      return () => import('./fr')
+*/
 
-
-
-
-
-export const wordLists: { [lang: string]: TranslatedWords } = {
-  fr: frenchWordList,
-  es: spanishWordList,
-  ru: russianWordList,
-  de: germanWordList,
-  hi: hindiWordList,
-  bn: bengaliWordList,
-  zh: chineseWordList,
-  ja: japaneseWordList
+export const getWordListForLang = (lang: LangCode): TranslatedWords => {
+  switch (lang) {
+    case 'fr':
+      return frenchWordList
+    case 'es':
+      return spanishWordList
+    case 'ru':
+      return russianWordList
+    case 'de':
+      return germanWordList
+    case 'hi':
+      return hindiWordList
+    case 'bn':
+      return bengaliWordList
+    case 'zh':
+      return chineseWordList
+    case 'ja':
+      return japaneseWordList
+    default:
+      return frenchWordList
+  }
 }

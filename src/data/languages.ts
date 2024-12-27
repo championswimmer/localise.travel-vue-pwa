@@ -1,9 +1,11 @@
 interface Language {
   name: string
   name_en: string
-  code: string
+  code: LangCode
   emoji: string
 }
+
+export type LangCode = 'fr' | 'es' | 'zh' | 'ar' | 'hi' | 'pt' | 'bn' | 'ru' | 'ja' | 'de'
 
 export const AppLanguages: { [code: string]: Language } = {
   fr: {
