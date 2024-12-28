@@ -17,8 +17,9 @@ export default defineConfig({
     }),
     VitePWA({
       registerType: 'autoUpdate',
+      mode: 'production', // TODO: use NODE_ENV
       devOptions: {
-        enabled: false,
+        enabled: false, // TODO: use NODE_ENV
       },
     }),
   ],
