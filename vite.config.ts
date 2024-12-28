@@ -17,6 +17,13 @@ export default defineConfig({
     }),
     VitePWA({
       registerType: 'autoUpdate',
+      manifest: {
+        // TODO: add icons
+        name: 'localise.travel - speak like locals while travelling',
+        short_name: 'localise.travel',
+        description: 'Speak like locals while travelling',
+        start_url: '/',
+      },
       mode: 'production', // TODO: use NODE_ENV
       devOptions: {
         enabled: false, // TODO: use NODE_ENV
