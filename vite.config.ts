@@ -7,7 +7,6 @@ import Components from 'unplugin-vue-components/vite'
 import { BootstrapVueNextResolver } from 'bootstrap-vue-next'
 import { VitePWA } from 'vite-plugin-pwa'
 
-
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
@@ -19,13 +18,13 @@ export default defineConfig({
     VitePWA({
       registerType: 'autoUpdate',
       devOptions: {
-        enabled: true,
-      }
-    })
+        enabled: false,
+      },
+    }),
   ],
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
 })
