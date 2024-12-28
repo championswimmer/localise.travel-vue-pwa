@@ -13,11 +13,12 @@ import {
   <footer class="footer mt-auto py-4 bg-light">
     <div class="row px-4">
       <div class="col-auto fw-medium">
-        Made with
+        Made using
         <GitHubCopilotIcon :size="18" class="align-text-top" />
         <VueDotjsIcon :size="18" class="align-text-top" />
         <BootstrapIcon :size="18" class="align-text-top" />
         <TypeScriptIcon :size="18" class="align-text-top" />
+        <br />
         by
         <a href="https://championswimmer.in" target="_blank">@championswimmer</a>
       </div>
