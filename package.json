@@ -21,6 +21,7 @@
     "bootstrap-vue-next": "^0.26.17",
     "lucide-vue-next": "^0.469.0",
     "pinia": "^2.2.6",
+    "pinia-plugin-persistedstate": "^4.2.0",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0",
     "vue3-simple-icons": "^13.2.0"
