@@ -7,7 +7,7 @@ import { getWordListForLang, type TranslatedWords } from '@/data/words'
 import { useLangStore } from '@/stores/lang'
 import { computed, ref } from 'vue'
 import { useRoute } from 'vue-router'
-import BreadCrumbs from '@/components/Breadcrumbs.vue'
+import BreadCrumbs from '@/components/BreadCrumbs.vue'
 
 const route = useRoute()
 const category = ref<Category | null>(null)
