@@ -23,7 +23,7 @@ const pronounce = () => {
 <template>
   <BCard class="my-3">
     <BCardBody class="p-2">
-      <div class="row">
+      <div class="row align-items-center">
         <div class="col me-auto">
           <h2 class="card-title fs-5 fw-medium text-dark-emphasis">{{ props.word }}</h2>
           <p class="card-text fs-4 fw-light text-primary mb-0">
@@ -33,8 +33,8 @@ const pronounce = () => {
             <AudioLines :size="18" :stroke-width="1" /> {{ props.translation.phonetic }}
           </p>
         </div>
-        <div class="col-1" @click="pronounce()">
-          <Volume2 class="mt-4" :size="32" />
+        <div class="col-auto text-end" @click="pronounce()">
+          <Volume2 class="mt-2 d-block mx-auto" :size="32" />
         </div>
       </div>
     </BCardBody>
