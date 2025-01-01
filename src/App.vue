@@ -12,6 +12,7 @@ import NavBar from '@/components/NavBar.vue'
       <RouterView />
     </main>
     <ReloadPrompt />
+    <LanguageSelector />
     <MainFooter />
   </div>
 </template>

@@ -7,18 +7,13 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    BBreadcrumb: typeof import('bootstrap-vue-next/components/BBreadcrumb')['BBreadcrumb']
     BCard: typeof import('bootstrap-vue-next/components/BCard')['BCard']
     BCardBody: typeof import('bootstrap-vue-next/components/BCard')['BCardBody']
     BListGroupItem: typeof import('bootstrap-vue-next/components/BListGroup')['BListGroupItem']
+    BreadCrumbs: typeof import('./src/components/BreadCrumbs.vue')['default']
     CategoryCard: typeof import('./src/components/CategoryCard.vue')['default']
-    GithubIcon: typeof import('./src/components/icons/GithubIcon.vue')['default']
-    HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
-    Icon: typeof import('./src/components/Icon.vue')['default']
-    IconCommunity: typeof import('./src/components/icons/IconCommunity.vue')['default']
-    IconDocumentation: typeof import('./src/components/icons/IconDocumentation.vue')['default']
-    IconEcosystem: typeof import('./src/components/icons/IconEcosystem.vue')['default']
-    IconSupport: typeof import('./src/components/icons/IconSupport.vue')['default']
-    IconTooling: typeof import('./src/components/icons/IconTooling.vue')['default']
+    LanguageSelector: typeof import('./src/components/LanguageSelector.vue')['default']
     LucideIcon: typeof import('./src/components/LucideIcon.vue')['default']
     MainFooter: typeof import('./src/components/MainFooter.vue')['default']
     NavBar: typeof import('./src/components/NavBar.vue')['default']
@@ -26,8 +21,6 @@ declare module 'vue' {
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     SubcategoryCard: typeof import('./src/components/SubcategoryCard.vue')['default']
-    TheWelcome: typeof import('./src/components/TheWelcome.vue')['default']
-    WelcomeItem: typeof import('./src/components/WelcomeItem.vue')['default']
     WordCard: typeof import('./src/components/WordCard.vue')['default']
   }
 }

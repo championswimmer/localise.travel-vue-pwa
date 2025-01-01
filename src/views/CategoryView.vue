@@ -7,6 +7,7 @@ import { getWordListForLang, type TranslatedWords } from '@/data/words'
 import { useLangStore } from '@/stores/lang'
 import { computed, ref } from 'vue'
 import { useRoute } from 'vue-router'
+import BreadCrumbs from '@/components/BreadCrumbs.vue'
 
 const route = useRoute()
 const category = ref<Category | null>(null)
@@ -29,6 +30,7 @@ function selectSubCategory(subcategory: string) {
 
 <template>
   <div>
+    <BreadCrumbs :route="routeName" />
     <h1 class="text-center fw-bold text-lowercase text-secondary">
       <LucideIcon :name="category!!.icon" :size="42" class="align-text-top" /> {{ category!!.name }}
     </h1>
