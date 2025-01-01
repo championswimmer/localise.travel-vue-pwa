@@ -3,27 +3,13 @@ import { AppLanguages } from '@/data/languages'
 import { useLangStore } from '@/stores/lang'
 import { BNavbar, BNavbarBrand, BNavbarNav, BNavForm, BNavItem } from 'bootstrap-vue-next'
 import { Globe, Languages, Footprints, SlidersHorizontal } from 'lucide-vue-next'
-import { computed ,  ref, onMounted, onUnmounted} from 'vue'
+import { computed } from 'vue'
 import { useRouter } from 'vue-router'
 
 const router = useRouter()
 const langStore = useLangStore()
 
 const currentLang = computed(() => AppLanguages[langStore.lang!!])
-
-const isMobile = ref(window.innerWidth < 768)
-
-const updateIsMobile = () => {
-  isMobile.value = window.innerWidth < 768
-}
-
-onMounted(() => {
-  window.addEventListener('resize', updateIsMobile)
-})
-
-onUnmounted(() => {
-  window.removeEventListener('resize', updateIsMobile)
-})
 </script>
 
 <template>
@@ -42,8 +28,8 @@ onUnmounted(() => {
     <BNavForm class="d-flex">
       <button class="btn btn-outline-secondary border-0" @click="langStore.toggleSelector">
         {{ currentLang.emoji }}
-        <span v-if="!isMobile" class="fw-medium">{{ currentLang.name }}</span>
-        <span v-if="!isMobile" class="fw-light">({{ currentLang.name_en }})</span>
+        <span class="d-none d-sm-inline fw-medium">{{ currentLang.name }}</span>
+        <span class="d-none d-sm-inline fw-light">({{ currentLang.name_en }})</span>
       </button>
     </BNavForm>
   </BNavbar>
