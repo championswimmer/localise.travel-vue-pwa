@@ -68,4 +68,10 @@ export const AppLanguages: { [code: string]: Language } = {
     code: 'de',
     emoji: '🇩🇪',
   },
+  it: {
+    name: 'Italiano',      
+    name_en: 'Italian',    
+    code: 'it',           
+    emoji: '🇮🇹',         
+  }
 }
