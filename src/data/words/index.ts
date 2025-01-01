@@ -15,6 +15,8 @@ import { wordList as hindiWordList } from './hi'
 import { wordList as bengaliWordList } from './bn'
 import { wordList as chineseWordList } from './zh'
 import { wordList as japaneseWordList } from './ja'
+import { wordList as italianWordList } from './it'
+import { wordList as arabicWordList } from './ar'
 import type { LangCode } from '../languages'
 
 /*
@@ -43,6 +45,10 @@ export const getWordListForLang = (lang: LangCode): TranslatedWords => {
       return chineseWordList
     case 'ja':
       return japaneseWordList
+    case 'it':
+      return italianWordList
+    case 'ar':
+      return arabicWordList
     default:
       return frenchWordList
   }
