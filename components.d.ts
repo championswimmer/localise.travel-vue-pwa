@@ -7,9 +7,15 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    BBreadcrumb: typeof import('bootstrap-vue-next/components/BBreadcrumb')['BBreadcrumb']
     BCard: typeof import('bootstrap-vue-next/components/BCard')['BCard']
     BCardBody: typeof import('bootstrap-vue-next/components/BCard')['BCardBody']
     BListGroupItem: typeof import('bootstrap-vue-next/components/BListGroup')['BListGroupItem']
+    Breadcrumb: typeof import('./src/components/Breadcrumb.vue')['default']
+    BreadCrumb: typeof import('./src/components/BreadCrumb.vue')['default']
+    Breadcrumbs: typeof import('./src/components/Breadcrumbs.vue')['default']
+    BreadCrumbs: typeof import('./src/components/BreadCrumbs.vue')['default']
+    Breadcrums: typeof import('./src/components/Breadcrums.vue')['default']
     CategoryCard: typeof import('./src/components/CategoryCard.vue')['default']
     LanguageSelector: typeof import('./src/components/LanguageSelector.vue')['default']
     LucideIcon: typeof import('./src/components/LucideIcon.vue')['default']
