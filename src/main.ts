@@ -5,6 +5,7 @@ import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
 
 import App from './App.vue'
 import router from './router'
+import posthogPlugin from './plugins/posthog'
 
 // Add bootstrap CSS
 import 'bootstrap/dist/css/bootstrap.css'
@@ -21,5 +22,7 @@ pinia.use(piniaPluginPersistedstate)
 app.use(pinia)
 app.use(router)
 app.use(createBootstrap())
+
+app.use(posthogPlugin)
 
 app.mount('#app')
