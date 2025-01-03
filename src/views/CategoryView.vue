@@ -5,7 +5,7 @@ import WordCard from '@/components/WordCard.vue'
 import { WordCategories, type Category } from '@/data/categories'
 import { getWordListForLang, type TranslatedWords } from '@/data/words'
 import { useLangStore } from '@/stores/lang'
-import { computed, ref } from 'vue'
+import { computed, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import BreadCrumbs from '@/components/BreadCrumbs.vue'
 
@@ -26,6 +26,12 @@ function selectSubCategory(subcategory: string) {
   selectedSubcategory.value = subcategory
   wordlist.value = getWordListForLang(langStore.lang)
 }
+
+watch(() => langStore.lang, (newLang) => {
+  wordlist.value = getWordListForLang(newLang)
+})
+
+wordlist.value = getWordListForLang(langStore.lang)
 </script>
 
 <template>
