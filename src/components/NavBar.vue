@@ -2,7 +2,7 @@
 import { AppLanguages } from '@/data/languages'
 import { useLangStore } from '@/stores/lang'
 import { BNavbar, BNavbarBrand, BNavbarNav, BNavForm, BNavItem } from 'bootstrap-vue-next'
-import { Globe, Languages, Footprints, SlidersHorizontal, ChevronDown } from 'lucide-vue-next'
+import { Globe, Languages, Footprints, SlidersHorizontal, ChevronDown, Settings } from 'lucide-vue-next'
 import { computed } from 'vue'
 import { useRouter } from 'vue-router'
 
@@ -29,6 +29,12 @@ const currentLang = computed(() => AppLanguages[langStore.lang!!])
         <span class="fw-medium ms-2 d-none d-sm-inline">{{ currentLang.name }}</span>
         <span class="fw-light ms-1 d-none d-sm-inline">({{ currentLang.name_en }})</span>
         <ChevronDown class="ms-1 d-inline d-sm-none" :size="16" />
+      </button>
+      <button
+        class="btn btn-outline-secondary border-0 d-flex align-items-center ms-2"
+        @click="langStore.toggleVoiceSelector"
+      >
+        <Settings class="me-2 mb-1" :size="24" />
       </button>
     </BNavForm>
   </BNavbar>
