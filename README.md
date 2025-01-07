@@ -62,3 +62,13 @@ bun test:e2e --debug
 ```sh
 bun lint
 ```
+
+## GitHub Actions Workflows
+
+### Build Workflow
+
+This workflow builds the app using the command `bun run build`. It is triggered on push and pull request events.
+
+### Test Workflow
+
+This workflow runs unit tests on the app using the command `bun test:unit`. It is triggered on push and pull request events.
