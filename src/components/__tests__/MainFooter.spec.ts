@@ -7,7 +7,7 @@ describe('MainFooter', () => {
   it('renders properly', () => {
     // const wrapper = mount(MainFooter, { props: { msg: 'Hello Vitest' } })
     const wrapper = mount(MainFooter)
-    expect(wrapper.text()).toContain('Made using')
+    expect(wrapper.text()).toContain('Made with')
     expect(wrapper.text()).toContain('@championswimmer')
   })
 })
