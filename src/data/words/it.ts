@@ -128,7 +128,7 @@ export const wordList: TranslatedWords = {
     phonetic: 'ritardo',
   },
 
-// Places
+  // Places
   // Hotels
   reception: {
     translation: 'reception',

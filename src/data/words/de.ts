@@ -208,8 +208,8 @@ export const wordList: TranslatedWords = {
     translation: 'Termin',
     phonetic: 'ter-min',
   },
-   // Outdoors
-   'hiking trail': {
+  // Outdoors
+  'hiking trail': {
     translation: 'Wanderweg',
     phonetic: 'van-der-veg',
   },

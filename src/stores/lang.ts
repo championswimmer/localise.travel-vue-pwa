@@ -17,9 +17,6 @@ export const useLangStore = defineStore(
     const lang = ref<LangCode>('fr')
     const setLang = (newLang: LangCode) => {
       lang.value = newLang
-      Promise.resolve().then(() => {
-        posthog.capture('change_language', { lang: newLang })
-      })
     }
 
     return { lang, setLang, selector, toggleSelector }

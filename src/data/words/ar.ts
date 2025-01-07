@@ -128,7 +128,7 @@ export const wordList: TranslatedWords = {
     phonetic: 'taakhir',
   },
 
-// Places
+  // Places
   // Hotels
   reception: {
     translation: 'الاستقبال',

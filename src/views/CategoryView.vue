@@ -27,9 +27,12 @@ function selectSubCategory(subcategory: string) {
   wordlist.value = getWordListForLang(langStore.lang)
 }
 
-watch(() => langStore.lang, (newLang) => {
-  wordlist.value = getWordListForLang(newLang)
-})
+watch(
+  () => langStore.lang,
+  (newLang) => {
+    wordlist.value = getWordListForLang(newLang)
+  },
+)
 
 wordlist.value = getWordListForLang(langStore.lang)
 </script>

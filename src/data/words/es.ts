@@ -627,4 +627,4 @@ export const wordList: TranslatedWords = {
     translation: 'límite de la tarjeta',
     phonetic: 'lee-mee-teh deh lah tar-heh-tah',
   },
-};
+}

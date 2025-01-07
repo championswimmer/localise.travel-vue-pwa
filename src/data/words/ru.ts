@@ -627,4 +627,4 @@ export const wordList: TranslatedWords = {
     translation: 'лимит карты',
     phonetic: 'lee-meet kar-ty',
   },
-};
+}
