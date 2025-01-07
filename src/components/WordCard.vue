@@ -15,6 +15,10 @@ const pronounce = () => {
     const utterance = new SpeechSynthesisUtterance(props.translation.translation)
     utterance.lang = langStore.lang
     utterance.rate = 0.7
+    const selectedVoice = langStore.selectedVoices[langStore.lang]
+    if (selectedVoice) {
+      utterance.voice = selectedVoice
+    }
     window.speechSynthesis.speak(utterance)
   }, 100)
 }

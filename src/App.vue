@@ -2,6 +2,9 @@
 import { RouterLink, RouterView } from 'vue-router'
 import ReloadPrompt from '@/components/ReloadPrompt.vue'
 import NavBar from '@/components/NavBar.vue'
+import LanguageSelector from '@/components/LanguageSelector.vue'
+import MainFooter from '@/components/MainFooter.vue'
+import VoiceSelectorModal from '@/components/VoiceSelectorModal.vue'
 </script>
 
 <template>
@@ -13,6 +16,7 @@ import NavBar from '@/components/NavBar.vue'
     </main>
     <ReloadPrompt />
     <LanguageSelector />
+    <VoiceSelectorModal />
     <MainFooter />
   </div>
 </template>

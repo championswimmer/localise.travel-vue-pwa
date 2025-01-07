@@ -14,16 +14,30 @@ export const useLangStore = defineStore(
       })
     }
 
+    const voiceSelector = ref<boolean>(false)
+    const toggleVoiceSelector = () => {
+      voiceSelector.value = !voiceSelector.value
+      Promise.resolve().then(() => {
+        posthog.capture('toggle_voice_selector', { open: voiceSelector.value })
+      })
+    }
+
     const lang = ref<LangCode>('fr')
     const setLang = (newLang: LangCode) => {
       lang.value = newLang
     }
 
-    return { lang, setLang, selector, toggleSelector }
+    const selectedVoices = ref<{ [key: string]: SpeechSynthesisVoice | null }>({})
+
+    const setVoice = (lang: LangCode, voice: SpeechSynthesisVoice) => {
+      selectedVoices.value[lang] = voice
+    }
+
+    return { lang, setLang, selector, toggleSelector, voiceSelector, toggleVoiceSelector, selectedVoices, setVoice }
   },
   {
     persist: {
-      pick: ['lang'],
+      pick: ['lang', 'selectedVoices'],
     },
   },
 )

@@ -1,14 +1,25 @@
 <script setup lang="ts">
 import { AppLanguages, type LangCode } from '@/data/languages'
 import { useLangStore } from '@/stores/lang'
-import { BListGroup, BModal } from 'bootstrap-vue-next'
+import { BListGroup, BModal, BFormSelect } from 'bootstrap-vue-next'
 import { Check } from 'lucide-vue-next'
 
 const langStore = useLangStore()
 
+const selectedVoices = ref<{ [key: string]: SpeechSynthesisVoice | null }>({})
+
 const selectLanguage = (lang: LangCode) => {
   langStore.setLang(lang)
   // langStore.selector = false
+}
+
+const selectVoice = (lang: LangCode, voice: SpeechSynthesisVoice) => {
+  selectedVoices.value[lang] = voice
+  langStore.setVoice(lang, voice)
+}
+
+const getVoicesForLang = (lang: LangCode) => {
+  return window.speechSynthesis.getVoices().filter(voice => voice.lang.startsWith(lang))
 }
 </script>
 
@@ -37,6 +48,12 @@ const selectLanguage = (lang: LangCode) => {
           :stroke-width="3"
           v-if="langStore.lang === lang.code"
           class="text-success float-end"
+        />
+        <BFormSelect
+          v-if="langStore.lang === lang.code"
+          v-model="selectedVoices[lang.code]"
+          :options="getVoicesForLang(lang.code)"
+          @change="selectVoice(lang.code, selectedVoices[lang.code])"
         />
       </BListGroupItem>
     </BListGroup>
