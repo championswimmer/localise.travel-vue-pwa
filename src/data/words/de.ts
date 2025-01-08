@@ -1,6 +1,133 @@
 import type { TranslatedWords } from '.'
 
 export const wordList: TranslatedWords = {
+  // Basics
+  // Greetings
+  hello: {
+    translation: 'Hallo',
+    phonetic: 'ha-lo',
+  },
+  hi: {
+    translation: 'Hi',
+    phonetic: 'hi',
+  },
+  'good morning': {
+    translation: 'Guten Morgen',
+    phonetic: 'goo-ten mor-gen',
+  },
+  'good afternoon': {
+    translation: 'Guten Tag',
+    phonetic: 'goo-ten tak',
+  },
+  'good evening': {
+    translation: 'Guten Abend',
+    phonetic: 'goo-ten ah-bent',
+  },
+  'good night': {
+    translation: 'Gute Nacht',
+    phonetic: 'goo-te nacht',
+  },
+  goodbye: {
+    translation: 'Auf Wiedersehen',
+    phonetic: 'auf vee-der-zen',
+  },
+  'see you later': {
+    translation: 'Bis später',
+    phonetic: 'bis shpay-ter',
+  },
+  'take care': {
+    translation: 'Pass auf dich auf',
+    phonetic: 'pas auf dich auf',
+  },
+  'have a nice day': {
+    translation: 'Schönen Tag',
+    phonetic: 'shö-nen tak',
+  },
+
+  // Numbers
+  zero: {
+    translation: 'Null',
+    phonetic: 'nool',
+  },
+  one: {
+    translation: 'Eins',
+    phonetic: 'ayns',
+  },
+  two: {
+    translation: 'Zwei',
+    phonetic: 'tsvay',
+  },
+  three: {
+    translation: 'Drei',
+    phonetic: 'dray',
+  },
+  five: {
+    translation: 'Fünf',
+    phonetic: 'fünf',
+  },
+  ten: {
+    translation: 'Zehn',
+    phonetic: 'tsayn',
+  },
+  twenty: {
+    translation: 'Zwanzig',
+    phonetic: 'tsvan-tsich',
+  },
+  fifty: {
+    translation: 'Fünfzig',
+    phonetic: 'fünf-tsich',
+  },
+  hundred: {
+    translation: 'Hundert',
+    phonetic: 'hun-dert',
+  },
+  thousand: {
+    translation: 'Tausend',
+    phonetic: 'tau-zent',
+  },
+
+  // Actions
+  go: {
+    translation: 'gehen',
+    phonetic: 'gey-en',
+  },
+  stop: {
+    translation: 'stoppen',
+    phonetic: 'shtop-pen',
+  },
+  sit: {
+    translation: 'sitzen',
+    phonetic: 'zi-tsen',
+  },
+  stand: {
+    translation: 'stehen',
+    phonetic: 'shtey-en',
+  },
+  walk: {
+    translation: 'laufen',
+    phonetic: 'lau-fen',
+  },
+  run: {
+    translation: 'rennen',
+    phonetic: 'ren-nen',
+  },
+  jump: {
+    translation: 'springen',
+    phonetic: 'shpring-en',
+  },
+  sleep: {
+    translation: 'schlafen',
+    phonetic: 'shla-fen',
+  },
+  eat: {
+    translation: 'essen',
+    phonetic: 'es-sen',
+  },
+  drink: {
+    translation: 'trinken',
+    phonetic: 'trin-ken',
+  },
+
   // Travel
   // Air Travel
   departure: {

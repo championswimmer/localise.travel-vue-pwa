@@ -13,7 +13,7 @@ declare module 'vue' {
     BListGroupItem: typeof import('bootstrap-vue-next/components/BListGroup')['BListGroupItem']
     BreadCrumbs: typeof import('./src/components/BreadCrumbs.vue')['default']
     CategoryCard: typeof import('./src/components/CategoryCard.vue')['default']
-    LanguageSelector: typeof import('./src/components/LanguageSelector.vue')['default']
+    LanguageSelector: typeof import('./src/components/modals/LanguageSelector.vue')['default']
     LucideIcon: typeof import('./src/components/LucideIcon.vue')['default']
     MainFooter: typeof import('./src/components/MainFooter.vue')['default']
     NavBar: typeof import('./src/components/NavBar.vue')['default']

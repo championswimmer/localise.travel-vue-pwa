@@ -1,6 +1,133 @@
 import type { TranslatedWords } from '.'
 
 export const wordList: TranslatedWords = {
+  // Basics
+  // Greetings
+  hello: {
+    translation: 'halo',
+    phonetic: 'ha-lo',
+  },
+  hi: {
+    translation: 'hai',
+    phonetic: 'hai',
+  },
+  'good morning': {
+    translation: 'selamat pagi',
+    phonetic: 'se-la-mat pa-gi',
+  },
+  'good afternoon': {
+    translation: 'selamat siang',
+    phonetic: 'se-la-mat si-ang',
+  },
+  'good evening': {
+    translation: 'selamat malam',
+    phonetic: 'se-la-mat ma-lam',
+  },
+  'good night': {
+    translation: 'selamat tidur',
+    phonetic: 'se-la-mat ti-dur',
+  },
+  goodbye: {
+    translation: 'selamat tinggal',
+    phonetic: 'se-la-mat ting-gal',
+  },
+  'see you later': {
+    translation: 'sampai jumpa',
+    phonetic: 'sam-pai jum-pa',
+  },
+  'take care': {
+    translation: 'hati-hati',
+    phonetic: 'ha-ti ha-ti',
+  },
+  'have a nice day': {
+    translation: 'selamat beraktivitas',
+    phonetic: 'se-la-mat ber-ak-ti-vi-tas',
+  },
+
+  // Numbers
+  zero: {
+    translation: 'nol',
+    phonetic: 'nol',
+  },
+  one: {
+    translation: 'satu',
+    phonetic: 'sa-tu',
+  },
+  two: {
+    translation: 'dua',
+    phonetic: 'du-a',
+  },
+  three: {
+    translation: 'tiga',
+    phonetic: 'ti-ga',
+  },
+  five: {
+    translation: 'lima',
+    phonetic: 'li-ma',
+  },
+  ten: {
+    translation: 'sepuluh',
+    phonetic: 'se-pu-luh',
+  },
+  twenty: {
+    translation: 'dua puluh',
+    phonetic: 'du-a pu-luh',
+  },
+  fifty: {
+    translation: 'lima puluh',
+    phonetic: 'li-ma pu-luh',
+  },
+  hundred: {
+    translation: 'seratus',
+    phonetic: 'se-ra-tus',
+  },
+  thousand: {
+    translation: 'seribu',
+    phonetic: 'se-ri-bu',
+  },
+
+  // Actions
+  go: {
+    translation: 'pergi',
+    phonetic: 'per-gi',
+  },
+  stop: {
+    translation: 'berhenti',
+    phonetic: 'ber-hen-ti',
+  },
+  sit: {
+    translation: 'duduk',
+    phonetic: 'du-duk',
+  },
+  stand: {
+    translation: 'berdiri',
+    phonetic: 'ber-di-ri',
+  },
+  walk: {
+    translation: 'jalan',
+    phonetic: 'ja-lan',
+  },
+  run: {
+    translation: 'lari',
+    phonetic: 'la-ri',
+  },
+  jump: {
+    translation: 'lompat',
+    phonetic: 'lom-pat',
+  },
+  sleep: {
+    translation: 'tidur',
+    phonetic: 'ti-dur',
+  },
+  eat: {
+    translation: 'makan',
+    phonetic: 'ma-kan',
+  },
+  drink: {
+    translation: 'minum',
+    phonetic: 'mi-num',
+  },
+
   // Travel
   // Air Travel
   departure: {
